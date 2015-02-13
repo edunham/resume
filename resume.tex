@@ -45,6 +45,12 @@
     \hfill #3 - #4
 }
 
+% conference name, date
+\newcommand{\talk}[2]{
+    \item[#1]
+    \hfill #2
+}
+
 \begin{document}
 \centerline{{\LARGE \bf Emily Dunham}}
 
@@ -148,22 +154,27 @@
 
 \begin{description}
     
-    \squish
+\squish
 
-    \item[thing]
-        \hfill date
-        
-            thing
+\talk{Southern California Linux Expo (SCALE)}{02/2015}
 
-            other thing
+    "Human Hacking"
 
-    \item[thing]
-        \hfill date
-        
-            thing
+\talk{Seattle Gnu/Linux Conference}{10/2014}
 
-            other thing
+    "Human Hacking", "Intermediate IRC", and "Thinking in Git"
 
+\talk{O'Reilly OSCON}{07/2014}
+
+    "DevOps for University Students"
+
+\talk{Portland State University Association for Computing Machinery}{05/2014}
+
+    "Git Workshop"
+
+\talk{LinuxFest Northwest}{04/2014}
+
+    "Teaching DevOps to University Students"
 
 \end{description}
 \end{document}
