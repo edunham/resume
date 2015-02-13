@@ -20,22 +20,27 @@
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
 
-\usepackage[normalem]{ulem}
+\usepackage[normalem]{ulem} % for the underlines
+\usepackage[compact]{titlesec}
 
+% use section command instead, better underlining & there's a thing to
+% squish space after
+% redefining section: 
+% might need makeatletter and makeatother
+%        - might be itemize but not description
+% beforeskip or afterskip
+% google \renewcommand baselinestretch
+% minipages?? CV
+        
 \newcommand{\heading}[1]{
-    \smallskip
-    \uline{
-        \makebox[\textwidth][s]{
-            % put the hfill before the #1 for left-aligned heading
-            \Large \bf \hfill #1
-        }
-    }
+    \section*{\uline{\hfill #1}}
 }
+
 
 \newcommand{\squish}{
     \setlength{\itemsep}{1pt}
     % tweak parskip value to adjust size on page
-    \setlength{\parskip}{1pt}
+    \setlength{\parskip}{1.5pt}
     \setlength{\parsep}{0pt}
 }
 
@@ -54,14 +59,17 @@
 \begin{document}
 \centerline{{\LARGE \bf Emily Dunham}}
 \bigskip
-\centerline{email: dunhame@onid.orst.edu
-        $\bullet$
-        blog: edunham.net
-        $\bullet$
-        irc: edunham on freenode.net}
+\centerline{
+    email: dunhame@onid.orst.edu
+    $\bullet$
+    blog: edunham.net
+    $\bullet$
+    irc: edunham on freenode.net
+}
 \centerline{github: edunham
-        $\bullet$
-        \emph{or email me for other contact info}}
+    $\bullet$
+    \emph{or email me for other contact info}
+}
 
 \heading{Employment}
 
