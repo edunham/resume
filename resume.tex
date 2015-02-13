@@ -22,7 +22,6 @@
 
 \usepackage[normalem]{ulem}
 
-%\newcommand{\heading}[1]{\uline{\makebox[\textwidth][s]{\Large \bf #1 \hfill}}}
 \newcommand{\heading}[1]{
     \smallskip
     \uline{
@@ -35,8 +34,15 @@
 
 \newcommand{\squish}{
     \setlength{\itemsep}{1pt}
-    \setlength{\parskip}{0pt}
+    % tweak parskip value to adjust size on page
+    \setlength{\parskip}{1pt}
     \setlength{\parsep}{0pt}
+}
+
+% place, title, start date, end date
+\newcommand{\experience}[4]{
+    \item[#1, #2]
+    \hfill #3 - #4
 }
 
 \begin{document}
@@ -59,8 +65,10 @@
 
 \squish   
 
-\item[Urban Airship, Operations Team Intern]
-    \hfill 06/2014 - 09/2014
+
+\experience{Urban Airship}
+           {Operations Team Intern}
+           {06/2014}{09/2014}
     
     Migrated services using Chef and Jenkins to facilitate datacenter move
 
@@ -69,15 +77,17 @@
     Audited and improved documentation for over 30 internal Java, Go, and Python
     services
 
-\item[OSU Open Source Lab, Student Systems Administrator]
-    \hfill 12/2012 - 06/2014
+\experience{OSU Open Source Lab}
+           {Student Systems Administrator}
+           {12/2012}{06/2014}
 
     Deployed and maintained physical servers and Linux VMs
 
     Solved hardware and software problems for users from over 100 hosted projects
 
-\item[Intel Corporation, Software Enabling Group USB3 Team Intern]
-    \hfill 06/2012 - 09/2012
+\experience{Intel Corporation}
+           {Software Enabling Group USB3 Team Intern}
+           {06/2012}{09/2012}
 
     Debugged Android system throughput on mobile devices (Java, C, C++)
 
@@ -85,8 +95,9 @@
 
     Prototyped solution to double throughput speed in specific use cases
 
-\item[OSU Open Source Lab, Student Software Developer]
-    \hfill 04/2011 - 06/2012
+\experience{OSU Open Source Lab}
+           {Student Software Developer}
+           {04/2011}{06/2012}
 
     Wrote and debugged Python, Django, JavaScript, CSS, HTML
 
@@ -107,25 +118,29 @@
 
 \begin{description}
    
-    \squish
+\squish
 
-    \item[Founder of OSU DevOps Bootcamp (devopsbootcamp.osuosl.org)]
-        \hfill 08/2013 - present
-        
-        Designed and implemented comprehensive systems engineering curriculum
+\experience{OSU DevOps Bootcamp}
+           {Founder}
+           {08/2013}{present}
 
-        Distributed Apache 2.0 licensed curriculum and recorded lectures
+    Designed and implemented comprehensive systems engineering curriculum
 
-    \item[President of Oregon State University Linux Users Group]
-        \hfill 2012 - 2014
+    Distributed Apache 2.0 licensed curriculum and recorded lectures
 
-        Organized weekly meetings, mentored students in FOSS involvement
+    devopsbootcamp.osuosl.org
+    
+\experience{OSU Linux Users Group}
+           {President}
+           {2012}{2014}
 
-    \item[Peer Leader, Peer Adviser, and Teaching Assistant for OSU EECS]
-        \hfill 2011 - 2012
+    Organized weekly meetings, mentored students in FOSS involvement
 
-        Taught C++ programming skills, instructed 30-person labs, graded
-        assignments
+\experience{OSU EECS}
+           {Peer Leader, Peer Adviser, and Teaching Assistant}
+           {2011}{2012}
+
+    Taught C++ programming skills, instructed 30-person labs, graded assignments
 
 \end{description}
 
