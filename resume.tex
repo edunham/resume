@@ -20,7 +20,9 @@
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
 
-\newcommand{\heading}[1]{\underline{\makebox[\textwidth][s]{\Large \bf #1 \hfill}}}
+\usepackage[normalem]{ulem}
+
+\newcommand{\heading}[1]{\uline{\makebox[\textwidth][s]{\Large \bf #1 \hfill}}}
 
 \begin{document}
 \centerline{{\LARGE \bf Emily Dunham}}
