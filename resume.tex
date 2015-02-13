@@ -22,7 +22,22 @@
 
 \usepackage[normalem]{ulem}
 
-\newcommand{\heading}[1]{\uline{\makebox[\textwidth][s]{\Large \bf #1 \hfill}}}
+%\newcommand{\heading}[1]{\uline{\makebox[\textwidth][s]{\Large \bf #1 \hfill}}}
+\newcommand{\heading}[1]{
+    \smallskip
+    \uline{
+        \makebox[\textwidth][s]{
+            % put the hfill before the #1 for left-aligned heading
+            \Large \bf \hfill #1
+        }
+    }
+}
+
+\newcommand{\squish}{
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+}
 
 \begin{document}
 \centerline{{\LARGE \bf Emily Dunham}}
@@ -38,11 +53,12 @@
         $\bullet$
         \emph{or email me for other contact info}}
 
-\bigskip
-
 \heading{Employment}
 
 \begin{description}
+
+\squish   
+
 \item[Urban Airship, Operations Team Intern]
     \hfill 06/2014 - 09/2014
     
@@ -76,25 +92,23 @@
 
 \end{description}
 
-\bigskip
-
 \heading{Education}
 
 \begin{itemize}
-    \setlength{\itemsep}{1pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}
+    
+    \squish
 
     \item Bachelor of Science, Computer Science, Oregon State University
     \item Cumulative GPA 3.24, anticipated graduation June 2015
 
 \end{itemize}
 
-\bigskip
-
 \heading{Extracurriculars}
 
 \begin{description}
+   
+    \squish
+
     \item[Founder of OSU DevOps Bootcamp (devopsbootcamp.osuosl.org)]
         \hfill 08/2013 - present
         
@@ -115,11 +129,12 @@
 
 \end{description}
 
-\bigskip
-
 \heading{Evangelism}
 
 \begin{description}
+    
+    \squish
+
     \item[thing]
         \hfill date
         
