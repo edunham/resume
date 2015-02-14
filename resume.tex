@@ -34,16 +34,21 @@
     \setlength{\parsep}{0pt}
 }
 
-% place, title, start date, end date
-\newcommand{\experience}[3]{
-\item[{#1}, \emph{#2}]
-    \hfill #3 
+% naming it 'date' would conflict with builtins
+\newcommand{\when}[1]{
+    \hfill \texttt{#1}
 }
 
-% conference name, date
+% place, title, start when, end date
+\newcommand{\experience}[3]{
+\item[{#1}, \emph{#2}]
+    \when{#3}
+}
+
+% conference name, when
 \newcommand{\conference}[2]{
     \item[#1]
-    \hfill #2
+    \when{#2}
 }
 
 \newcommand{\contact}[3]{
@@ -96,7 +101,7 @@
 
     Solved hardware and software problems for users from over 100 hosted projects
 
-\experience{Intel Corporation}
+\experience{Intel}
            {Software Enabling Group USB3 Team Intern}
            {06/2012 - 09/2012}
 
