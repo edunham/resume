@@ -11,12 +11,23 @@
 
 \documentclass[11pt]{article}
 \topmargin=0.0in
-\textwidth=6.25in
-\oddsidemargin=0.0in
-\evensidemargin=0in
+\textwidth=6.5in
+
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+
+\setlength{\hoffset}{-0.25in}
+
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+
+
 \headheight=0pt
 \headsep=0pt
-\textheight=9.5in
+\textheight=10in
+
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
 
@@ -65,6 +76,11 @@
     }
 }
 
+\newcommand{\skill}[2]{
+    \textbf{#1} \hfill #2
+
+}
+
 % http://www.parashift.com/c++-faq-lite/latex-macros.html
 \newcommand{\CPP}{
     C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}
@@ -77,6 +93,16 @@
 \contact{dunhame@onid.oregonstate.edu}
         {edunham.net}
         {github.com/edunham}
+
+\heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\skill{Development}{Python, C/C++, Go, Ruby, HTML/CSS/Javascript}
+\skill{Systems Administration}{Chef, Puppet, CFengine, Apache, Mailman,
+    Jenkins, TravisCI, DNS}
+\skill{Open-Source Workflow}{IRC, Git, SSH/SFTP, Markdown, ReStructuredText, 
+    Sphinx}
+\skill{Robotics}{Mechanical design, prototyping, OpenCV, Arduino development}
+\skill{Leadership}{Documentation, teaching, public speaking, writing curricula}
 
 \heading{Education}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
