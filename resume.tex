@@ -52,7 +52,11 @@
 
 % place, title, start when, end date
 \newcommand{\experience}[3]{
-\item[{#1}, \emph{#2}]
+    \ifx&#2&
+        \item[{#1}]
+    \else
+        \item[{#1}, \emph{#2}]
+    \fi
     \when{#3}
 }
 
