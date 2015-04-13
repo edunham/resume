@@ -60,7 +60,7 @@
     \when{#3}
 }
 
-\newcommand{\contact}[3]{
+\newcommand{\contact}[4]{
     \centerline{
         \large       
         \texttt{#1}
@@ -70,13 +70,12 @@
         \texttt{#3}
     }
     \centerline{
-        \emph{or email me for other contact info}
+        \emph{#4}
     }
 }
 
 \newcommand{\skill}[2]{
     \textbf{#1} \hfill #2
-
 }
 
 % http://www.parashift.com/c++-faq-lite/latex-macros.html
@@ -92,6 +91,7 @@
 \contact{edunham@edunham.net}
         {edunham.net}
         {github.com/edunham}
+        {Portland, Oregon}
 
 \heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -196,6 +196,20 @@ design}
 
 \begin{description}
 \squish
+
+%\experience{OpenWest}
+%           {}
+%           {05/2015}
+%
+%    ``Human Hacking'', ``Thinking in Git'', and ``Teaching DevOps to
+%    University Students''
+
+\experience{LinuxFest Northwest}
+           {}
+           {04/2015}
+
+    ``Algorithmic Complexity and You'', ``Thinking in Git''
+
 \experience{Southern California Linux Expo (SCALE)}
            {}
            {02/2015}
@@ -220,11 +234,11 @@ design}
 
     ``Git Workshop''
 
-\experience{LinuxFest Northwest}
-           {}
-           {04/2014}
-
-    ``Teaching DevOps to University Students''
+%\experience{LinuxFest Northwest}
+%           {}
+%           {04/2014}
+%
+%    ``Teaching DevOps to University Students''
 
 \end{description}
 \end{document}
