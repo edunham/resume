@@ -1,7 +1,7 @@
 resume
 ======
 
-This is both my personal resume and an example of a Computer Science student's
+This is both my personal resume and an example of a DevOps Engineer's
 technical resume. 
 
 The LaTeX code is licensed under the MIT license, to prevent any ambiguity
@@ -18,4 +18,22 @@ file.
 
 To generate and view the PDF, I run ``pdflatex resume.tex && evince
 resume.pdf``. You can also use the included Makefile if you prefer.
+
+Job Search Links
+================
+
+[We Work Remotely](https://weworkremotely.com/) has remote jobs
+
+
+Interview Prep and Company Research Links
+=========================================
+
+Julia Evans's [Questions I'm Asking In
+Interviews](http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/)
+
+Julie Pagano's [Organization information
+template](http://juliepagano.com/blog/2015/08/15/job-search-retrospective/org-info-template.pdf) repeats some of Evans's questions
+
+Liz Abinate's post on [culture
+smells](http://lizabinante.com/blog/getting-hired-without-getting-burned/)
 
