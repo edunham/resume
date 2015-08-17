@@ -22,7 +22,12 @@ resume.pdf``. You can also use the included Makefile if you prefer.
 Job Search Links
 ================
 
-[We Work Remotely](https://weworkremotely.com/) has remote jobs
+[We Work Remotely](https://weworkremotely.com/) has remote tech industry jobs
+[whitetruffle](https://www.whitetruffle.com) seems to aggregate mostly
+smaller, startup-type tech opportunities
+[ziprecruiter](https://www.ziprecruiter.com/jobs) is an aggregator that covers
+categories outside of tech, but doesn't appear to have a very fine-grained
+search within categories
 
 [Hired](https://hired.com/signup) is a poorly-named but seemingly well-executed 
 system wherein your profile goes in a marketplace for a week and companies 
