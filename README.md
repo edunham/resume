@@ -24,6 +24,9 @@ Job Search Links
 
 [We Work Remotely](https://weworkremotely.com/) has remote jobs
 
+[Hired](https://hired.com/signup) is a poorly-named but seemingly well-executed 
+system wherein your profile goes in a marketplace for a week and companies 
+sort of bid on you.
 
 Interview Prep and Company Research Links
 =========================================
