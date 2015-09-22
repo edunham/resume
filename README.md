@@ -33,6 +33,16 @@ search within categories
 system wherein your profile goes in a marketplace for a week and companies 
 sort of bid on you.
 
+Portland-specific job aggregators
+=================================
+
+* Meet people at events on [Calagator](http://calagator.org/).
+* [pdxpipeline](http://pdxpipeline.com/jobs/) has tech and non-tech listings
+* [Silicon Florist](http://siliconflorist.com/jobs/) has salaried and hourly
+  tech postings
+* [portlandtech](http://portlandtech.org/) has a bunch of poorly formatted
+* postings, and some useful sidebar links
+
 Interview Prep and Company Research Links
 =========================================
 
