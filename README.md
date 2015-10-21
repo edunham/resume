@@ -12,12 +12,39 @@ without having to think very much about LaTeX.
 See my advice at http://lug.oregonstate.edu/blog/resume/ for other technical
 resume tips. 
 
-To use my resume as a template for your own, either fork this repository (that
-"fork" button in the upper right) or simply take a copy of the resume.tex
-file. 
+How to use
+----------
 
 To generate and view the PDF, I run ``pdflatex resume.tex && evince
 resume.pdf``. You can also use the included Makefile if you prefer.
+
+How to share
+------------
+
+If you're using this repo as a template for your own resume, I recommend *not*
+creating a fork. GitHub seems to intend forks to mean code which will ever get
+merged back into the origin. 
+
+Instead, make an *empty* repository in your own github account called
+`resume`, then:
+
+```
+yourcomputer$ git clone git@github.com:edunham/resume.git
+yourcomputer$ cd resume
+yourcomputer$ ed resume.tex # put your own stuff in
+yourcomputer$ ed README.me # take out the stuff that only applies to edunham
+yourcomputer$ git commit -am "Added my accomplishments"
+yourcomputer$ git remote add me git@github.com:YOURUSERNAME/resume.git
+yourcomputer$ git push me master
+```
+
+You can also `git config -e` to change the URLs so that your repo is `origin`
+and my remote is `edunham`, for simplicity's sake. 
+
+This way you'll get credit on the contributions graph for changes you make.
+
+If you just want to hack on the LaTeX code that builds the resume then PR it
+back, go ahead and fork. But that's probably not your use case. 
 
 Job Search Links
 ================
@@ -59,5 +86,6 @@ LaTeX Links
 ===========
 
 https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1
+
 
 
