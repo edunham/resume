@@ -1,5 +1,5 @@
 % E. Dunham -- Resume
-% Contents Copyright (C) 2014, E. Dunham
+% Contents Copyright (C) 2014 - 2015, E. Dunham
 
 % LaTeX code for rendering the resume is distributed under the MIT license.
 % See LICENSE.txt. It means you can use the code for whatever you want,
@@ -33,7 +33,7 @@
 
 \usepackage[normalem]{ulem} % for the underlines
 \usepackage[compact]{titlesec}
-        
+
 \newcommand{\heading}[1]{
     \section*{\uline{\hfill #1}}
 }
@@ -62,7 +62,7 @@
 
 \newcommand{\contact}[4]{
     \centerline{
-        \large       
+        \large
         \texttt{#1}
         $\bullet$
         \texttt{#2}
@@ -95,11 +95,11 @@
 
 \heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\skill{Development}{Python, C/\CPP, HTML/CSS/Javascript, Django, Flask}
+\skill{Development}{Python, Rust, C/\CPP, HTML/CSS/Javascript, Django, Flask}
 
 \skill{Systems Administration}{Ansible, SaltStack, Travis, Apache, Mailman, DNS, LDAP, SSH}
 
-\skill{Collaboration}{IRC, Git \& GitHub, Sphinx, Pandoc, Jira/RT/Bugzilla} 
+\skill{Collaboration}{IRC, Git \& GitHub, Sphinx, Pandoc, Jira/RT/Bugzilla}
 
 \skill{Robotics}{Mechanical design \& prototyping, 3D modeling, OpenCV, Arduino}
 
@@ -113,14 +113,18 @@ design}
 \experience{Mozilla Research}
            {DevOps Engineer}
            {05/2015 - Present}
-           
-    Developed and maintained hosting and continuous integration infrastructure
-    for Rust and Servo projects
+
+    Improved hosting and continuous integration infrastructure for Rust and
+    Servo projects
+
+    Deployed configuration management with Ansible and SaltStack
+
+    Mentored new contributors and represented Rust project at conferences
 
 \experience{Urban Airship}
            {Operations Team Intern}
            {06/2014 - 09/2014}
-    
+
     Migrated services using Chef and Jenkins to facilitate datacenter move
 
     Led interdisciplinary Hack Week team to develop Flask frontend to internal
@@ -141,8 +145,7 @@ design}
 
     Participated in agile development with Scrum methodology
 
-    Prototyped solution to double Android USB3 throughput speed in specific
-    use cases with Java, C, \CPP
+    Prototyped solution to double Android USB3 throughput with Java, C, \CPP
 
 \experience{OSU Open Source Lab}
            {Student Software Developer}
@@ -156,6 +159,12 @@ design}
 
 \begin{description}
 \squish
+\experience{PDX Rust Users Group}
+           {Organizer}
+           {2015 - present}
+
+    Organized monthly meeting, communicated users' feedback to Rust core team
+
 \experience{OSU DevOps Bootcamp}
            {Founder}
            {2013 - 2015}
@@ -163,7 +172,7 @@ design}
     Designed and implemented comprehensive systems engineering curriculum
 
     Distributed Apache 2.0 licensed curriculum (devopsbootcamp.osuosl.org)
-    
+
 \experience{OSU Linux Users Group}
            {President}
            {2012 - 2014}
@@ -193,29 +202,41 @@ design}
 
 \end{description}
 
-\heading{Speaking}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Recent Speaking Engagements}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{description}
 \squish
 
-%\experience{OpenWest}
+\experience{SeaGL}
+           {}
+           {10/2015}
+
+    ``You Should Speak'', technical presentation tutorial
+
+\experience{O'Reilly OSCON}
+           {}
+           {07/2015}
+
+    ``First Impressions: The Value of the ``Noob'''', Ignite talk
+
+\experience{OpenWest}
+           {}
+           {05/2015}
+
+    ``Human Hacking'', ``Thinking in Git'', and ``Teaching DevOps to
+    University Students''
+
+%\experience{LinuxFest Northwest}
 %           {}
-%           {05/2015}
+%           {04/2015}
 %
-%    ``Human Hacking'', ``Thinking in Git'', and ``Teaching DevOps to
-%    University Students''
+%    ``Algorithmic Complexity and You'', ``Thinking in Git''
 
-\experience{LinuxFest Northwest}
-           {}
-           {04/2015}
-
-    ``Algorithmic Complexity and You'', ``Thinking in Git''
-
-\experience{Southern California Linux Expo (SCALE)}
-           {}
-           {02/2015}
-
-    ``Human Hacking''
+%\experience{Southern California Linux Expo (SCALE)}
+%           {}
+%           {02/2015}
+%
+%    ``Human Hacking''
 
 %\experience{Seattle GNU/Linux Conference}
 %           {}
@@ -223,11 +244,11 @@ design}
 %
 %    ``Human Hacking'', ``Intermediate IRC'', and ``Thinking in Git''
 
-\experience{O'Reilly OSCON}
-           {}
-           {07/2014}
-
-    ``DevOps for University Students''
+%\experience{O'Reilly OSCON}
+%           {}
+%           {07/2014}
+%
+%    ``DevOps for University Students''
 
 %\experience{Portland State University Association for Computing Machinery}
 %           {}
