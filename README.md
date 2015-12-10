@@ -49,16 +49,17 @@ back, go ahead and fork. But that's probably not your use case.
 Job Search Links
 ================
 
-[We Work Remotely](https://weworkremotely.com/) has remote tech industry jobs
-[whitetruffle](https://www.whitetruffle.com) seems to aggregate mostly
-smaller, startup-type tech opportunities
-[ziprecruiter](https://www.ziprecruiter.com/jobs) is an aggregator that covers
-categories outside of tech, but doesn't appear to have a very fine-grained
-search within categories
-
-[Hired](https://hired.com/signup) is a poorly-named but seemingly well-executed 
-system wherein your profile goes in a marketplace for a week and companies 
-sort of bid on you.
+* [We Work Remotely](https://weworkremotely.com/) has remote tech industry jobs
+* [Europe Remotely](http://europeremotely.com/) weekly update on jobs for
+  remoties in European time zones
+* [whitetruffle](https://www.whitetruffle.com) seems to aggregate mostly
+  smaller, startup-type tech opportunities
+* [ziprecruiter](https://www.ziprecruiter.com/jobs) is an aggregator that
+  covers categories outside of tech, but doesn't appear to have a very
+  fine-grained search within categories
+* [Hired](https://hired.com/signup) is a poorly-named but seemingly
+  well-executed system wherein your profile goes in a marketplace for a week
+  and companies sort of bid on you.
 
 Portland-specific job aggregators
 =================================
