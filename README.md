@@ -18,6 +18,12 @@ How to use
 To generate and view the PDF, I run ``pdflatex resume.tex && evince
 resume.pdf``. You can also use the included Makefile if you prefer.
 
+Everything before the ``\begin{document}`` configures the style and
+formatting. 
+
+Your document's appearance will rarely change when you mess with indentation
+in the source, but will often change if you add or remove a blank line. 
+
 How to share
 ------------
 

@@ -13,36 +13,25 @@
 \usepackage[normalem]{ulem} % for the underlines
 \usepackage[compact]{titlesec} % Shrink default spacings
 \usepackage{tabto} % For aligning skills section
-
-% Fit more words on page.
 \textwidth=7in
 \textheight=10.5in
-
 \topmargin -1in % Reclaim the default whitespace from top of page 
-
 \oddsidemargin -.25in % Reclaim whitespace on left, make it look centered 
-
 \pagenumbering{gobble} % Don't number pages
 \setlength{\parindent}{0pt} % Don't indent paragraphs
-
 \newcommand{\heading}[1]{
 %    \section*{\centering\uline{\hfill #1 \hfill }} % Center the headings
     \section*{\uline{\hfill #1 }} % Right-align the headings
 }
-
 \newcommand{\squish}{
     \setlength{\itemsep}{0.5pt}
-    \setlength{\parskip}{0pt} % tweak parskip value to adjust size on page
+    \setlength{\parskip}{0pt} % tweak parskip value to adjust total height 
     \setlength{\parsep}{0.5pt}
 }
-
-% naming it 'date' would conflict with builtins
-\newcommand{\when}[1]{
+\newcommand{\when}[1]{ % naming this 'date' would conflict with builtins
     \hfill \texttt{#1}
 }
-
-% place, optional title, date
-\newcommand{\experience}[3]{
+\newcommand{\experience}[3]{ % place, optional title, date
     \ifx&#2&
         \item[{#1}]
     \else
@@ -50,25 +39,13 @@
     \fi
     \when{#3}
 }
-
 \newcommand{\contact}[4]{
-    \centerline{
-        \large
-        \texttt{#1}
-        $\bullet$
-        \texttt{#2}
-        $\bullet$
-        \texttt{#3}
-    }
-    \centerline{
-        \emph{#4}
-    }
+    \centerline{ \large \texttt{#1} $\bullet$ \texttt{#2} $\bullet$ \texttt{#3} }
+    \centerline{ \emph{#4} }
 }
-
 \newcommand{\skill}[2]{
     \textbf{#1} \tabto{2.5in} #2
 }
-
 % Write C++ all fancy-like
 % http://www.parashift.com/c++-faq-lite/latex-macros.html
 \newcommand{\CPP}{
@@ -110,44 +87,44 @@
            {DevOps Engineer}
            {05/2015 - Present}
 
-    Improved hosting and continuous integration infrastructure for Rust and
-    Servo projects
+Improved hosting and continuous integration infrastructure for Rust and Servo
+projects
 
-    Deployed configuration management with Ansible and SaltStack
+Deployed configuration management with Ansible and SaltStack
 
-    Mentored new contributors and represented Rust project at conferences
+Mentored new contributors and represented Rust project at conferences
 
 \experience{Urban Airship}
            {Operations Team Intern}
            {06/2014 - 09/2014}
 
-    Migrated services using Chef and Jenkins to facilitate datacenter move
+Migrated services using Chef and Jenkins to facilitate datacenter move
 
-    Led interdisciplinary Hack Week team to develop Flask frontend to internal
-    LDAP API
+Led interdisciplinary Hack Week team to develop Flask frontend to internal
+LDAP API
 
-    Audited and improved documentation for over 30 internal Java, Go, and Python
-    services
+Audited and improved documentation for over 30 internal Java, Go, and Python
+services
 
 \experience{OSU Open Source Lab}
            {Student Systems Administrator}
            {12/2012 - 06/2014}
 
-    Solved hardware and software problems for users from over 100 hosted projects
+Solved hardware and software problems for users from over 100 hosted projects
 
 \experience{Intel}
            {Software Enabling Group USB3 Team Intern}
            {06/2012 - 09/2012}
 
-    Participated in agile development with Scrum methodology
+Participated in agile development with Scrum methodology
 
-    Prototyped solution to double Android USB3 throughput with Java, C, \CPP
+Prototyped solution to double Android USB3 throughput with Java, C, \CPP
 
 \experience{OSU Open Source Lab}
            {Student Software Developer}
            {04/2011 - 06/2012}
 
-    Wrote and debugged Python, Django, JavaScript, CSS, HTML
+Wrote and debugged Python, Django, JavaScript, CSS, HTML
 
 \end{description}
 
@@ -159,27 +136,27 @@
            {Organizer}
            {2015 - present}
 
-    Organized monthly meetings, communicated users' feedback to Rust core team
+Organized monthly meetings, communicated users' feedback to Rust core team
 
 \experience{OSU DevOps Bootcamp}
            {Founder}
            {2013 - 2015}
 
-    Designed and implemented comprehensive systems engineering curriculum
+Designed and implemented comprehensive systems engineering curriculum
 
-    Distributed Apache 2.0 licensed curriculum (devopsbootcamp.osuosl.org)
+Distributed Apache 2.0 licensed curriculum (devopsbootcamp.osuosl.org)
 
 \experience{OSU Linux Users Group}
            {President}
            {2012 - 2014}
 
-    Organized weekly meetings, mentored students in FOSS involvement
+Organized weekly meetings, mentored students in FOSS involvement
 
 \experience{OSU EECS}
            {Peer Leader, Peer Adviser, and Teaching Assistant}
            {2011 - 2012}
 
-    Taught \CPP programming skills, instructed 30-person labs, graded assignments
+Taught \CPP programming skills, instructed 30-person labs, graded assignments
 
 \end{description}
 
@@ -191,10 +168,8 @@
            {}
            {2010-2015}
 
-    Upper-division coursework in Computer Science including Operating
-    Systems,\\
-    Software Engineering, Analysis of Algorithms, Cryptography, and Applied
-    Robotics.
+Upper-division coursework in Computer Science including Operating Systems,\\
+Software Engineering, Analysis of Algorithms, Cryptography, and Applied Robotics.
 
 \end{description}
 
