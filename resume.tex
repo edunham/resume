@@ -9,40 +9,30 @@
 % Template originally developed by E. Dunham
 % https://github.com/edunham/resume/blob/master/resume.tex
 
-\documentclass[11pt]{article}
-\topmargin=0.0in
-\textwidth=6.5in
+\documentclass[11pt]{article} % Set default font size to 11pt
+\usepackage[normalem]{ulem} % for the underlines
+\usepackage[compact]{titlesec} % Shrink default spacings
+\usepackage{tabto} % For aligning skills section
 
-\topmargin 0pt
-\advance \topmargin by -\headheight
-\advance \topmargin by -\headsep
-
-\setlength{\hoffset}{-0.25in}
-
-\oddsidemargin 0pt
-\evensidemargin \oddsidemargin
-\marginparwidth 0.5in
-
-
-\headheight=0pt
-\headsep=0pt
+% Fit more words on page.
+\textwidth=7in
 \textheight=10.5in
 
-\pagenumbering{gobble}
-\setlength{\parindent}{0pt}
+\topmargin -1in % Reclaim the default whitespace from top of page 
 
-\usepackage[normalem]{ulem} % for the underlines
-\usepackage[compact]{titlesec}
+\oddsidemargin -.25in % Reclaim whitespace on left, make it look centered 
+
+\pagenumbering{gobble} % Don't number pages
+\setlength{\parindent}{0pt} % Don't indent paragraphs
 
 \newcommand{\heading}[1]{
-%    \section*{\centering\uline{\hfill #1 \hfill }}
-    \section*{\uline{\hfill #1 }}
+%    \section*{\centering\uline{\hfill #1 \hfill }} % Center the headings
+    \section*{\uline{\hfill #1 }} % Right-align the headings
 }
 
 \newcommand{\squish}{
     \setlength{\itemsep}{0.5pt}
-    % tweak parskip value to adjust size on page
-    \setlength{\parskip}{0pt}
+    \setlength{\parskip}{0pt} % tweak parskip value to adjust size on page
     \setlength{\parsep}{0.5pt}
 }
 
@@ -76,9 +66,10 @@
 }
 
 \newcommand{\skill}[2]{
-    \textbf{#1} \hfill #2
+    \textbf{#1} \tabto{2.5in} #2
 }
 
+% Write C++ all fancy-like
 % http://www.parashift.com/c++-faq-lite/latex-macros.html
 \newcommand{\CPP}{
     C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}
@@ -96,15 +87,20 @@
 
 \heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\skill{Systems Administration}{Ansible, SaltStack, TravisCI, BuildBot, Apache, DNS, LDAP, SSH}
+\skill{Systems Administration}
+      {Ansible, SaltStack, TravisCI, BuildBot, Apache, DNS, LDAP, SSH}
 
-\skill{Development}{Python, Rust, C/\CPP, HTML/CSS/Javascript}
+\skill{Development}
+      {Python, Rust, C/\CPP, HTML/CSS/Javascript}
 
-\skill{Leadership}{Teaching, public speaking, event planning, curriculum design}
+\skill{Leadership}
+      {Teaching, public speaking, event planning, curriculum design}
 
-\skill{Collaboration}{IRC, Git \& GitHub, Sphinx, Pandoc, Jira/RT/Bugzilla}
+\skill{Collaboration}
+      {IRC, Git \& GitHub, Sphinx, Pandoc, Jira/RT/Bugzilla}
 
-%\skill{Robotics}{Mechanical design \& prototyping, 3D modeling, OpenCV, Arduino}
+%\skill{Robotics}
+%      {Mechanical design \& prototyping, 3D modeling, OpenCV, Arduino}
 
 \heading{Employment}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
