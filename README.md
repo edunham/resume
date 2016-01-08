@@ -32,7 +32,7 @@ Instead, make an *empty* repository in your own github account called
 yourcomputer$ git clone git@github.com:edunham/resume.git
 yourcomputer$ cd resume
 yourcomputer$ ed resume.tex # put your own stuff in
-yourcomputer$ ed README.me # take out the stuff that only applies to edunham
+yourcomputer$ ed README.md # take out the stuff that only applies to edunham
 yourcomputer$ git commit -am "Added my accomplishments"
 yourcomputer$ git remote add me git@github.com:YOURUSERNAME/resume.git
 yourcomputer$ git push me master
