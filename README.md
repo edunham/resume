@@ -94,5 +94,8 @@ LaTeX Links
 
 https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1
 
+Resume Generation Links
+=======================
 
+https://resumefodder.com/docs/jsonresume.html
 
