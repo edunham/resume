@@ -2,15 +2,15 @@ resume
 ======
 
 This is both my personal resume and an example of a DevOps Engineer's
-technical resume. 
+technical resume.
 
 The LaTeX code is licensed under the MIT license, to prevent any ambiguity
 about the fact that you are welcome to copy it and use it for whatever
 purposes you like. The intended purpose is to make your own resume pretty
-without having to think very much about LaTeX. 
+without having to think very much about LaTeX.
 
 See my advice at http://lug.oregonstate.edu/blog/resume/ for other technical
-resume tips. 
+resume tips.
 
 How to use
 ----------
@@ -19,17 +19,17 @@ To generate and view the PDF, I run ``pdflatex resume.tex && evince
 resume.pdf``. You can also use the included Makefile if you prefer.
 
 Everything before the ``\begin{document}`` configures the style and
-formatting. 
+formatting.
 
 Your document's appearance will rarely change when you mess with indentation
-in the source, but will often change if you add or remove a blank line. 
+in the source, but will often change if you add or remove a blank line.
 
 How to share
 ------------
 
 If you're using this repo as a template for your own resume, I recommend *not*
 creating a fork. GitHub seems to intend forks to mean code which will ever get
-merged back into the origin. 
+merged back into the origin.
 
 Instead, make an *empty* repository in your own github account called
 `resume`, then:
@@ -45,12 +45,12 @@ yourcomputer$ git push me master
 ```
 
 You can also `git config -e` to change the URLs so that your repo is `origin`
-and my remote is `edunham`, for simplicity's sake. 
+and my remote is `edunham`, for simplicity's sake.
 
 This way you'll get credit on the contributions graph for changes you make.
 
 If you just want to hack on the LaTeX code that builds the resume then PR it
-back, go ahead and fork. But that's probably not your use case. 
+back, go ahead and fork. But that's probably not your use case.
 
 Job Search Links
 ================
@@ -94,8 +94,8 @@ LaTeX Links
 
 https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1
 
-Resume Generation Links
-=======================
+General Resume Links
+====================
 
-https://resumefodder.com/docs/jsonresume.html
-
+* https://resumefodder.com/docs/jsonresume.html
+* http://i.imgur.com/uH2Vj0D.png
