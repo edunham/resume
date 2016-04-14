@@ -89,6 +89,11 @@ template](http://juliepagano.com/blog/2015/08/15/job-search-retrospective/org-in
 Liz Abinate's post on [culture
 smells](http://lizabinante.com/blog/getting-hired-without-getting-burned/)
 
+Interview guides:
+* [Asana](https://asana.com/eng/interview-guide)
+
+[Questions to ask interviewers](https://gitlab.com/doctorj/interview-questions)
+
 LaTeX Links
 ===========
 
