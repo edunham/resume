@@ -94,6 +94,15 @@ Interview guides:
 
 [Questions to ask interviewers](https://gitlab.com/doctorj/interview-questions)
 
+Money Stuff
+-----------
+
+* [Buffer's transparency & calculator](https://open.buffer.com/transparent-salaries/)
+* [Glassdoor](https://www.glassdoor.com/index.htm), obviously
+* dig through [this spreadsheet](https://docs.google.com/spreadsheets/d/1-CqO6Px-0yA2421OOtJoj69_MO564XvddDYDNfHuS7A/edit#gid=999557069) if you have free time
+* [#talkpay](https://twitter.com/search?q=%23talkpay)
+
+
 LaTeX Links
 ===========
 
