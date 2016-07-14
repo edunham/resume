@@ -101,6 +101,7 @@ Money Stuff
 * [Glassdoor](https://www.glassdoor.com/index.htm), obviously
 * dig through [this spreadsheet](https://docs.google.com/spreadsheets/d/1-CqO6Px-0yA2421OOtJoj69_MO564XvddDYDNfHuS7A/edit#gid=999557069) if you have free time
 * [#talkpay](https://twitter.com/search?q=%23talkpay)
+* [Comparably](https://www.comparably.com/)
 
 
 LaTeX Links
