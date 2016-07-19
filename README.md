@@ -114,3 +114,4 @@ General Resume Links
 
 * https://resumefodder.com/docs/jsonresume.html
 * http://i.imgur.com/uH2Vj0D.png
+* https://tisiphone.net/2016/03/17/the-worst-infosec-resume-ever/
