@@ -1,0 +1,52 @@
+% E. Dunham -- Resume
+% Contents Copyright (C) 2014 - 2016, E. Dunham
+
+% LaTeX code for rendering the resume is distributed under the MIT license.
+% See LICENSE.txt. It means you can use the code for whatever you want,
+% including your own resume, but I'm not liable if it catches your computer on
+% fire.
+
+% Template originally developed by E. Dunham
+% https://github.com/edunham/resume/blob/master/resume.tex
+
+\usepackage[normalem]{ulem} % for the underlines
+\usepackage[compact]{titlesec} % Shrink default spacings
+\usepackage{tabto} % For aligning skills section
+\textwidth=7in
+\textheight=10.5in
+\topmargin -1in % Reclaim the default whitespace from top of page
+\oddsidemargin -.25in % Reclaim whitespace on left, make it look centered
+\pagenumbering{gobble} % Don't number pages
+\setlength{\parindent}{0pt} % Don't indent paragraphs
+\newcommand{\heading}[1]{
+%    \section*{\centering\uline{\hfill #1 \hfill }} % Center the headings
+    \section*{\uline{\hfill #1 }} % Right-align the headings
+}
+\newcommand{\squish}{
+    \setlength{\itemsep}{0.5pt}
+    \setlength{\parskip}{0pt} % tweak parskip value to adjust total height
+    \setlength{\parsep}{0.5pt}
+}
+\newcommand{\when}[1]{ % naming this 'date' would conflict with builtins
+    \hfill \texttt{#1}
+}
+\newcommand{\experience}[3]{ % place, optional title, date
+    \ifx&#2&
+        \item[{#1}]
+    \else
+        \item[{#1}, \emph{#2}]
+    \fi
+    \when{#3}
+}
+\newcommand{\contact}[4]{
+    \centerline{ \large \texttt{#1} $\bullet$ \texttt{#2} $\bullet$ \texttt{#3} }
+    \centerline{ \emph{#4} }
+}
+\newcommand{\skill}[2]{
+    \textbf{#1} \tabto{2.5in} #2
+}
+% Write C++ all fancy-like
+% http://www.parashift.com/c++-faq-lite/latex-macros.html
+\newcommand{\CPP}{
+    C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}
+}
