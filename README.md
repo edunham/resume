@@ -66,6 +66,8 @@ Job Search Links
 * [Hired](https://hired.com/signup) is a poorly-named but seemingly
   well-executed system wherein your profile goes in a marketplace for a week
   and companies sort of bid on you.
+* [workintech.io](http://workintech.io/) aggregates a whole bunch of these by
+  category, including diversity, geographic region, and internship
 
 Portland-specific job aggregators
 =================================
