@@ -68,6 +68,10 @@ Job Search Links
   and companies sort of bid on you.
 * [workintech.io](http://workintech.io/) aggregates a whole bunch of these by
   category, including diversity, geographic region, and internship
+* [Hiring-Without-Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
+  repo lists a whole lot of companies with "unconfentional" interview
+  techniques
+
 
 Portland-specific job aggregators
 =================================
