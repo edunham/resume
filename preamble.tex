@@ -38,6 +38,13 @@
     \fi
     \when{#3}
 }
+\newcommand{\event}[4]{
+    \bf{#1} \tabto{2in} \texttt{#2} \tabto{3in} \normalfont
+    \ifx&#3& \else
+       \emph{ {#3},}
+    \fi
+    ``{#4}''
+}
 \newcommand{\contact}[4]{
     \centerline{ \large \texttt{#1} $\bullet$ \texttt{#2} $\bullet$ \texttt{#3} }
     \centerline{ \emph{#4} }
@@ -48,5 +55,5 @@
 % Write C++ all fancy-like
 % http://www.parashift.com/c++-faq-lite/latex-macros.html
 \newcommand{\CPP}{
-    C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}
+    \hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}
 }
