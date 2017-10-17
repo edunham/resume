@@ -17,14 +17,13 @@
 \oddsidemargin -.25in % Reclaim whitespace on left, make it look centered
 \pagenumbering{gobble} % Don't number pages
 \setlength{\parindent}{0pt} % Don't indent paragraphs
+
 \newcommand{\heading}[1]{
 %    \section*{\centering\uline{\hfill #1 \hfill }} % Center the headings
     \section*{\uline{\hfill #1 }} % Right-align the headings
 }
 \newcommand{\squish}{
-    \setlength{\itemsep}{\whitespaciness pt}
     \setlength{\parskip}{\whitespaciness pt}
-    \setlength{\parsep}{\whitespaciness pt}
 }
 \newcommand{\when}[1]{ % naming this 'date' would conflict with builtins
     \typeoffill \texttt{ #1}
