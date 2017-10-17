@@ -8,11 +8,6 @@
 
 % Template originally developed by E. Dunham
 % https://github.com/edunham/resume/blob/master/resume.tex
-
-\def \whitespaciness { 2pt } % bigger numbers = emptier page
-\def \typeoffill {\dotfill} % hfill makes blank, dotfill makes dotted,
-
-
 \usepackage[normalem]{ulem} % for the underlines
 \usepackage[compact]{titlesec} % Shrink default spacings
 \usepackage{tabto} % For aligning skills section
@@ -27,12 +22,12 @@
     \section*{\uline{\hfill #1 }} % Right-align the headings
 }
 \newcommand{\squish}{
-    \setlength{\itemsep}{\whitespaciness}
-    \setlength{\parskip}{\whitespaciness}
-    \setlength{\parsep}{\whitespaciness}
+    \setlength{\itemsep}{\whitespaciness pt}
+    \setlength{\parskip}{\whitespaciness pt}
+    \setlength{\parsep}{\whitespaciness pt}
 }
 \newcommand{\when}[1]{ % naming this 'date' would conflict with builtins
-    \typeoffill \texttt{#1}
+    \typeoffill \texttt{ #1}
 }
 \newcommand{\experience}[3]{ % place, optional title, date
     \ifx&#2&

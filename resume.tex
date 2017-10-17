@@ -10,6 +10,13 @@
 % https://github.com/edunham/resume/blob/master/resume.tex
 
 \documentclass[11pt]{article} % Set default font size to 11pt
+
+
+% Some settings that the stuff hidden in the preamble will reference
+\def \whitespaciness { 2 } % pt. bigger numbers = emptier page. 0 is ok.
+\def \typeoffill {\dotfill} % hfill makes blank, dotfill makes dotted lines.
+
+
 \input{preamble}
 \begin{document}
 
@@ -27,7 +34,7 @@
       {Ansible, SaltStack, TravisCI, BuildBot, Apache, DNS, LDAP, SSH}
 
 \skill{Development}
-      {Python, Bash, Rust, C/\CPP, HTML/CSS/Javascript}
+      {Python, Bash, Rust, HTML/CSS/Javascript}
 
 \skill{Community}
       {Teaching, public speaking, event planning, curriculum design}
@@ -87,12 +94,6 @@ Participated in agile development with Scrum methodology.
 
 Prototyped solution to double Android USB3 throughput with Java, C, \CPP.
 
-\experience{OSU Open Source Lab}
-           {Student Software Developer}
-           {04/2011 - 06/2012}
-
-Wrote and debugged Python, Django, JavaScript, CSS, HTML.
-
 \end{description}
 
 \heading{Leadership}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,12 +119,6 @@ Distributed Apache 2.0 licensed curriculum (devopsbootcamp.osuosl.org)
            {2012 - 2014}
 
 Organized weekly meetings, mentored students in FOSS involvement
-
-\experience{OSU EECS}
-           {Peer Leader, Peer Adviser, and Teaching Assistant}
-           {2011 - 2012}
-
-Taught \CPP programming skills, instructed 30-person labs, graded assignments
 
 \end{description}
 
