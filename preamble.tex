@@ -11,6 +11,8 @@
 \usepackage[normalem]{ulem} % for the underlines
 \usepackage[compact]{titlesec} % Shrink default spacings
 \usepackage{tabto} % For aligning skills section
+\usepackage{multicol} % for multicols command
+\usepackage{ragged2e} % for /justify
 \textwidth=7in
 \textheight=10.5in
 \topmargin -1in % Reclaim the default whitespace from top of page
@@ -56,3 +58,57 @@
     C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}
 }
 
+% alternative to \skill, for extended lists of skills
+% columnsep can be used here to unbalance the columns, with a negative number
+% increasing the size of the right column versus the left.  '0cm' or equivalent
+% will keep them balanced
+%
+% params: columnsep, heading, individual skills
+\newcommand{\skillz}[3]{
+    \vspace{-0.5cm}
+    \squish
+    \setlength{\columnsep}{#1}
+    \begin{multicols}{2}
+    \squish
+    \RaggedRight % force to the hard left of the column
+    \small
+    \textbf{#2}
+    \columnbreak
+    \squish
+    \justify
+    \small
+    #3
+    \end{multicols}
+    \vspace{-0.2cm} % yes, really necessary to keep this self-contained
+}
+
+% based on https://tex.stackexchange.com/a/148803
+% intended to increase readability of longer entries under 'experience'
+% params: indent/margin, item separation, top separation
+\newenvironment{hangingparlist}[3]
+    {\begin{list}
+        {}
+        {\setlength{\itemindent}{-#1}%%
+        \setlength{\leftmargin}{#1}%%
+        \setlength{\itemsep}{#2}%%
+        \setlength{\parsep}{#2}%%
+        \setlength{\topsep}{#3}%%
+        }
+    \setlength{\parindent}{-#1}%%
+    \item[]
+    }
+    {\end{list}}
+
+
+% Projects/Contributions
+% params: name, optional website, description
+\newcommand{\project}[3]{
+    \begin{description}
+        \setlength{\parsep}{1em}
+        \ifx&#2&
+            \item[#1] --- #3
+        \else
+            \item[#1]\emph{#2} --- #3
+        \fi
+    \end{description}
+}
