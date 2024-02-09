@@ -56,6 +56,7 @@ Job Search Links
 ================
 
 * [We Work Remotely](https://weworkremotely.com/) has remote tech industry jobs
+* [OkJob](https://okjob.io/) 4 day week job board
 * [Europe Remotely](http://europeremotely.com/) weekly update on jobs for
   remoties in European time zones
 * [whitetruffle](https://www.whitetruffle.com) seems to aggregate mostly
